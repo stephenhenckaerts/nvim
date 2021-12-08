@@ -12,6 +12,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'w0rp/ale'
 Plug 'kassio/neoterm'
 Plug 'ryanoasis/vim-devicons'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 colorscheme gruvbox
@@ -94,3 +95,10 @@ inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
+
+"--- Lightline Settings ---"
+set noshowmode
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
